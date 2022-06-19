@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
+import android.widget.TextView
 import com.example.landapp2.Data.Room
 import com.example.landapp2.R
 
@@ -24,6 +25,17 @@ class RoomAdapter(
         }
 
         val Row = tempRow!!
+
+
+        val roomData = mList[position]
+
+        val priceView = Row.findViewById<TextView>(R.id.priceView)
+        val addressAndFloorView = Row.findViewById<TextView>(R.id.addressAndFloorView)
+        val descriptionView = Row.findViewById<TextView>(R.id.descriptionView)
+
+        priceView.text = roomData.changePriceToBeauty()
+        addressAndFloorView.text = "${roomData.address}, ${roomData.changeFloorToBeauty()}"
+        descriptionView.text = roomData.description
 
         return Row
 

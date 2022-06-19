@@ -25,6 +25,7 @@
             android:padding="5dp">
 
             <TextView
+                android:id="@+id/priceView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
@@ -33,6 +34,7 @@
                 android:text="2억 8,500만원"/>
 
             <TextView
+                android:id="@+id/addressAndFloorView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
@@ -41,6 +43,7 @@
                 android:text="마포구 서교동, 3층"/>
 
             <TextView
+                android:id="@+id/descriptionView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="신혼 부부의 보금자리 서교동에 위치"/>
