@@ -1,5 +1,6 @@
 package com.example.landapp2
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.landapp2.Adpater.RoomAdapter
@@ -22,5 +23,11 @@ class MainActivity : AppCompatActivity() {
         mRoomAdapter = RoomAdapter(this, R.layout.room_list_item, mRoomList)
         roomListView.adapter = mRoomAdapter
 
+        roomListView.setOnItemClickListener { parent, view, position, id ->
+            val roomData = mRoomList[position]
+            val myIntent = Intent(this, )
+        }
+
     }
+
 }
