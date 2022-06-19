@@ -25,6 +25,8 @@ class RoomAdapter(
 
         val Row = tempRow!!
 
+        return Row
+
     }
 
 }
