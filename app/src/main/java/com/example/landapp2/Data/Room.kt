@@ -1,5 +1,6 @@
 package com.example.landapp2.Data
 
+import java.io.Serializable
 import java.text.NumberFormat
 import java.util.*
 
@@ -7,7 +8,7 @@ class Room(
     val price: Int,
     val address: String,
     val floor: Int,
-    val description: String) {
+    val description: String) : Serializable {
 
     fun changePriceToBeauty(): String {
         if (this.price >= 10000) {
