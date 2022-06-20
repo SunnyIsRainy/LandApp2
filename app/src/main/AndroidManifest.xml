@@ -7,18 +7,21 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_house"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_house_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.LandApp2"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:targetApi="31">
+<!--        액티비티마다 다른 테마를 적용할 수 있음-->
         <activity
             android:name=".roomDetail"
+            android:theme="@style/Theme.Design.NoActionBar"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
+<!--            intent-filter를 가지고 있는 activity가 시작점이다ㅏ-->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
